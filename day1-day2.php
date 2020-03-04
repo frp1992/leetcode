@@ -55,11 +55,14 @@ class LeetCode {
 
 
 }
-$abc = new LeetCode;
-$arr = [1,2,3,4,5,6,7];
-var_dump(implode('--', $arr));
-$abc->rotate($arr,3);
-var_dump(implode('--', $arr));
+$code = new LeetCode;
+$day1 = [0,0,1,1,1,2,2,3,3,4];
+$code->deleteRepeat( $day1 );
+var_dump(implode('--', $day1));
+
+$day2 = [1,2,3,4,5,6,7];
+$code->rotate( $day2 , 3 );
+var_dump(implode('--', $day2));
 ?>
 
 
